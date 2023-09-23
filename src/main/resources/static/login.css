@@ -1,0 +1,150 @@
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 2rem;
+    color: #11998e;
+    padding: 20px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1.2rem;
+    color: #9b9b9b;
+}
+
+
+.form__field:focus {
+    ~ .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: rgb(231, 127, 58);
+        font-weight:700;
+    }
+    padding-bottom: 6px;
+    font-weight: 100;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #e77f3a, rgb(200, 0, 255));
+    border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+    &:required,&:invalid { box-shadow:none; }
+}
+
+.formbg{
+    margin: 0 auto;
+    width: 100%; /* Увеличьте ширину до 90% экрана */
+    max-width: 1000px; /* Увеличьте максимальную ширину */
+    max-height: 900px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+    padding: 25px;
+}
+
+
+
+.registration{
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    line-height: 2.25;
+    text-decoration: none;/*ссылка без подчеркивания*/
+}
+
+.reg_but{
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 0.25;
+    text-decoration: none;/*ссылка без подчеркивания*/
+    color: #000000;/*цвет ссылок меню*/
+    /*opacity: 0.75;!*значение прозрачности*!*/
+    list-style: none;/*удалить черные маркеры*/
+}
+
+.bn29 {
+    border: none;
+    padding: 0.8em 2.5em;
+    outline: none;
+    color: white;
+    font-style: 1.2em;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    background: none;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+.bn29:before,
+.bn29:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10em;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 105%;
+    height: 105%;
+    content: "";
+    z-index: -2;
+    background-size: 400% 400%;
+    background: linear-gradient(
+            60deg,
+            #f79533,
+            #f37055,
+            #ef4e7b,
+            #a166ab
+    );
+}
+
+.bn29:before {
+    -webkit-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    -webkit-animation: pulse 10s infinite ease;
+    animation: pulse 10s infinite ease;
+}
+
+.bn29:after {
+    -webkit-filter: blur(0.3px);
+    filter: blur(0.3px);
+}
+
+.bn29:hover:before {
+    width: 115%;
+    height: 115%;
+}
+
+
+.login_page{
+    font-family: brandon-grotesque,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 2.25;
+    display: flex;
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    align-items: center; /* Вертикальное выравнивание по центру */
+}
